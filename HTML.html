@@ -1,0 +1,81 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2761
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww30040\viewh18900\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 <!DOCTYPE html>\
+<html lang="en">\
+<head>\
+    <meta charset="UTF-8">\
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">\
+    <title>STMO Festival Food Menu</title>\
+    <link rel="stylesheet" href="styles.css">\
+    <script src="https://js.squareupsandbox.com/v2/paymentform"></script>\
+</head>\
+<body>\
+\
+    <header>\
+        <h1>STMO Festival Food Corner</h1>\
+        <nav>\
+            <a href="#menu">Menu</a>\
+            <a href="#cart">Cart</a>\
+        </nav>\
+    </header>\
+\
+    <!-- Menu Section -->\
+    <section id="menu">\
+        <h2>Our Menu</h2>\
+        <div class="menu-item">\
+            <img src="images/pizza.jpg" alt="Pizza">\
+            <div>\
+                <h3>Pizza</h3>\
+                <p>Delicious cheese pizza - $10</p>\
+                <button onclick="addToCart('Pizza', 10)">Add to Cart</button>\
+            </div>\
+        </div>\
+        <div class="menu-item">\
+            <img src="images/burger.jpg" alt="Burger">\
+            <div>\
+                <h3>Burger</h3>\
+                <p>Juicy beef burger - $8</p>\
+                <button onclick="addToCart('Burger', 8)">Add to Cart</button>\
+            </div>\
+        </div>\
+        <div class="menu-item">\
+            <img src="images/pasta.jpg" alt="Pasta">\
+            <div>\
+                <h3>Pasta</h3>\
+                <p>Creamy Alfredo pasta - $12</p>\
+                <button onclick="addToCart('Pasta', 12)">Add to Cart</button>\
+            </div>\
+        </div>\
+        <div class="menu-item">\
+            <img src="images/salad.jpg" alt="Salad">\
+            <div>\
+                <h3>Salad</h3>\
+                <p>Fresh garden salad - $6</p>\
+                <button onclick="addToCart('Salad', 6)">Add to Cart</button>\
+            </div>\
+        </div>\
+    </section>\
+\
+    <!-- Cart Section -->\
+    <section id="cart">\
+        <h2>Your Cart</h2>\
+        <ul id="cart-items"></ul>\
+        <p>Total: $<span id="total">0</span></p>\
+        <button id="checkout-button">Checkout with Square</button>\
+    </section>\
+\
+    <footer>\
+        <p>STMO Festival \'a9 2024</p>\
+        <nav>\
+            <a href="#">Instagram</a> | <a href="#">Facebook</a> | <a href="#">Twitter</a>\
+        </nav>\
+    </footer>\
+\
+    <script src="script.js"></script>\
+</body>\
+</html>}
